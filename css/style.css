@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 共通 */
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+/*  */
+
+body {
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+}
+
+.large-text{
+    font-size: 300%;
+    color: black;
+}
+.medium-text{
+    font-size: 250%;
+    color: black;
+}
+.small-text{
+    font-size: 200%;
+    color: black;
+}
+.theta-text{
+    color: goldenrod;
+}
+.headline{
+    border-top: double 4px darkgoldenrod;
+    border-bottom: double 4px darkgoldenrod;
+}
+.btn{
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    position: relative;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: lightcoral;
+    border: groove 8px goldenrod;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 200%;
+    color: white;
+}
+.btn:hover{
+    top: -4px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.3);
+}
+.btn:active{
+    top: 3px;
+    box-shadow: none;
+}
+.horizontal-btn{
+    display: flex;
+}
+.horizontal-margin{
+    flex-basis: 20%;
+}
+.border-line{
+    margin: 30px auto;
+}
+
+/* ヘッダー */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+.header-text {
+    font-size: 450%;
+    color: black;
+}
+
+/* ナビゲーション */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tab {
+    display: none;
+}
+.tab-label {
+    color: black;
+    background: lightgray;
+    border-bottom: 2px solid deepskyblue;
+    order: -1;
+    flex-basis: 20%;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+.tab:checked+.tab-label {
+    background: deepskyblue;
+}
+.tab:checked+.tab-label+.tab-body {
+    display: block;
+}
+.tab-body {
+    display: none;
+    flex-grow: 1;
+    flex-basis: 60%;
+    margin: 10px auto 0 auto;
+}
+.tab-overview {
+    text-align: center;
+    width: 90%;
+    margin: 5px auto 50px auto;
+}
+.tab-text {
+    color: black;
+    font-size: 400%;
+    margin-bottom: 10px;
+}
+
+/* 更新履歴 */
+
+.history {
+    width: 90%;
+    margin: 0 auto 5px auto;
+}
+.history-item-container {
+    border-top: solid 1px grey;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+}
+.history-item {
+    display: flex;
+    border-bottom: solid 1px grey;
+}
+.history-time-text {
+    flex-basis: 20%;
+    text-align: center;
+}
+.history-info-text {
+    flex-basis: 80%;
+    border-left: solid 1px grey;
+}
+
+/* プロフィール */
+
+.profile{
+    width: 90%;
+    margin: auto;
+}
+.profile-section {
+    margin: 0 0 100px 0;
+}
+.profile-sub-section{
+    margin: 0 0 10px 0;
+}
+
+/* コンテンツ */
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+.content-section {
+    margin: 0 0 100px 0;
+}
+.content-sub-section{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.game-content-image{
+    width: 60%;
+    border: solid 4px darkorange;
+    border-radius: 4px;
+}
+.game-content-title-text{
+    margin: 10px auto;
+    width: 60%;
+    border-left: solid 4px darkorange;
+    border-right: solid 4px darkorange;
+    background: lightgoldenrodyellow;
+}
+.game-content-info-text{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+/* フッター */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    margin: 5px auto;
+}
+.footer-text {
+    color: black;
+    font-size: 150%;
+}
