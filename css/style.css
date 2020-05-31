@@ -9,16 +9,12 @@ html {
     font-size: 62.5%;
     height: 100%;
 }
-
-/*  */
-
 body {
     background-color: white;
     height: 100%;
     width: 60%;
     margin: auto;
 }
-
 .large-text{
     font-size: 300%;
     color: black;
