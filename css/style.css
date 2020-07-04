@@ -75,11 +75,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px auto;
+    background: grey;
 }
 .header-text {
     font-size: 450%;
-    color: black;
+    color: white;
 }
 
 /* ナビゲーション */
@@ -93,8 +93,8 @@ body {
     display: none;
 }
 .tab-label {
-    color: black;
-    background: lightgray;
+    color: white;
+    background: gray;
     border-bottom: 2px solid deepskyblue;
     order: -1;
     flex-basis: 20%;
@@ -204,8 +204,9 @@ body {
     align-items: center;
     height: 5%;
     margin: 5px auto;
+    background: gray;
 }
 .footer-text {
-    color: black;
+    color: white;
     font-size: 150%;
 }
