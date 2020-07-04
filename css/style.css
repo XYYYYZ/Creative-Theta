@@ -36,7 +36,9 @@ body {
     border-bottom: double 4px darkgoldenrod;
 }
 .btn{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     margin: 10px auto;
     position: relative;
