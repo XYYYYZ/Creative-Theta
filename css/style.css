@@ -113,11 +113,10 @@ body {
     background: deepskyblue;
 }
 .tab-body {
-    margin: 10px auto 0 auto;
+    margin: 50px 0;
 }
 .tab-overview {
     text-align: center;
-    margin: 5px auto 50px auto;
 }
 .tab-text {
     color: black;
@@ -129,7 +128,8 @@ body {
 
 .history {
     width: 90%;
-    margin: 0 auto 5px auto;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .history-item-container {
     border-top: solid 1px grey;
@@ -156,7 +156,7 @@ body {
     margin: auto;
 }
 .profile-section {
-    margin: 0 0 100px 0;
+    margin-top: 100px;
 }
 .profile-sub-section{
     margin: 0 0 10px 0;
@@ -169,7 +169,7 @@ body {
     margin: auto;
 }
 .content-section {
-    margin: 0 0 100px 0;
+    margin-top: 100px;
 }
 .content-sub-section{
     margin-top: 50px;
