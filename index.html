@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative Θ</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -15,11 +17,14 @@
     </header>
 
     <!-- ナビゲーション -->
-    <nav class="navigation">
-        <!-- HOMEタブ -->
-        <input type="radio" name="TAB" id="tab-01" class="tab" checked="checked">
-        <label for="tab-01" class="tab-label">HOME</label>
-        <!-- HOMEの内容 -->
+    <ul class="navigation">
+        <li class="nav-list"><a id="tab-home" onclick="showContents('#home', '#tab-home');">HOME</a></li>
+        <li class="nav-list"><a id="tab-profile" onclick="showContents('#profile', '#tab-profile');">PROFILE</a></li>
+        <li class="nav-list"><a id="tab-contents" onclick="showContents('#contents', '#tab-contents');">CONTENTS</a></li>
+    </ul>
+   
+    <!-- HOME -->
+    <div id="home">
         <article class="tab-body">
             <!-- HOMEの概要 -->
             <header class="tab-overview">
@@ -38,11 +43,10 @@
                 </div>
             </section>
         </article>
+    </div>
 
-        <!-- PROFILEタブ -->
-        <input type="radio" name="TAB" id="tab-02" class="tab">
-        <label for="tab-02" class="tab-label">PROFILE</label>
-        <!-- PROFILEの内容 -->
+    <!-- PROFILE -->
+    <div id="profile">
         <article class="tab-body">
             <!-- PROFILEの概要 -->
             <header class="tab-overview">
@@ -85,11 +89,10 @@
                 </section>
             </div>
         </article>
-
-        <!-- CONTENTSタブ -->
-        <input type="radio" name="TAB" id="tab-03" class="tab">
-        <label for="tab-03" class="tab-label">CONTENTS</label>
-        <!-- CONTENTSの内容 -->
+    </div>
+    
+    <!-- CONTENTS -->
+    <div id="contents">
         <article class="tab-body">
             <!-- CONTENTSの概要 -->
             <header class="tab-overview">
@@ -151,8 +154,8 @@
                 </section>
             </div>
         </article>
-    </nav>
-
+    </div>
+    
     <!-- フッター -->
     <footer class="footer-container">
         <p class="footer-text"><small>&copy; 2020 shiro-megane</small></p>
