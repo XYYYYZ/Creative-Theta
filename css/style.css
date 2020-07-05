@@ -190,7 +190,7 @@ body {
     background: lightgoldenrodyellow;
 }
 .game-content-info-text{
-    text-align: center;
+    text-align: left;
     width: 60%;
     margin: auto;
 }
