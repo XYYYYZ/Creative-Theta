@@ -7,11 +7,9 @@
 
 html {
     font-size: 62.5%;
-    height: 100%;
 }
 body {
     background-color: white;
-    height: 100%;
     margin: auto;
 }
 .large-text{
@@ -203,7 +201,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5%;
     background: gray;
 }
 .footer-text {
